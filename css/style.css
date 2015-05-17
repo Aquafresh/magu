@@ -1,0 +1,1018 @@
+/*
+
+===========================
+  !--- NAVIGATION ---!
+===========================
+1. Icon style -------- qwe1
+2. General style ----- qwe2
+3. Header ------------ qwe3
+4. Hosting check ----- qwe4
+5. Features ---------- qwe5
+6. Clients ----------- qwe6
+7. Price section ----- qwe7
+8. Footer ------------ qwe8
+9. Selectric --------- qwe9
+
+*/
+
+/*
+===================
+    Icon style - qwe1
+===================
+*/
+
+@font-face {
+  font-family: 'symbols-maguwohost';
+  src: url('../font/symbols-maguwohost.eot?12633016');
+  src: url('../font/symbols-maguwohost.eot?12633016#iefix') format('embedded-opentype'),
+       url('../font/symbols-maguwohost.woff?12633016') format('woff'),
+       url('../font/symbols-maguwohost.ttf?12633016') format('truetype'),
+       url('../font/symbols-maguwohost.svg?12633016#symbols-maguwohost') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
+/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
+/*
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: 'symbols-maguwohost';
+    src: url('../font/symbols-maguwohost.svg?12633016#symbols-maguwohost') format('svg');
+  }
+}
+*/
+
+ [class^="icon-"]:before, [class*=" icon-"]:before {
+  font-family: "symbols-maguwohost";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+  /* opacity: .8; */
+
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+
+  /* Animation center compensation - margins should be symmetric */
+  /* remove if not needed */
+  margin-left: .2em;
+
+  /* you can be more comfortable with increased icons size */
+  /* font-size: 120%; */
+
+  /* Font smoothing. That was taken from TWBS */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Uncomment for 3D effect */
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+}
+
+.icon-gplus:before { content: '\e800'; } /* '' */
+.icon-twitter:before { content: '\e801'; } /* '' */
+.icon-instagramm:before { content: '\e802'; } /* '' */
+.icon-location:before { content: '\e803'; } /* '' */
+
+/*
+============================
+    General style ----- qwe2
+============================
+*/
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: "Raleway", Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+h1 {
+    font-family: "Rockwell", "Times New Roman", Times, serif;
+    font-size: 48px;
+    font-weight: normal;
+    line-height: 24px;
+    margin: 0;
+    color: #fff;
+}
+
+h2 {
+    font-size: 48px;
+    font-weight: bold;
+    line-height: 48px;
+    color: #202242;
+    margin: 0;
+}
+
+h3 {
+    font-size: 36px;
+    font-weight: bold;
+    line-height: 36px;
+    margin: 0;
+}
+
+h4 {
+    font-family: "Rockwell", "Times New Roman", Times, serif;
+    font-size: 30px;
+    line-height: 24px;
+    color: #f4d320;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 1170px;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+/*
+===============================
+    3. Header ------------ qwe3
+===============================
+*/
+.main-header:after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.left-header {
+    float: left;
+    width: 838px;
+    border-right: 1px solid #ebebeb;
+}
+
+.left-header>a {
+    float: left;
+    margin-top: 68px;
+    margin-bottom: 57px;
+    margin-left: 45px;
+    color: #202242;
+    font-size: 30px;
+    font-family: "Rockwell", "Times New Roman", Times, serif;
+    position: relative;
+    line-height: 24px;
+}
+
+.left-header>a>span {
+    font-weight: bold;
+}
+
+.left-header>a:before {
+    content: '';
+    display: block;
+    width: 27px;
+    height: 35px;
+    position: absolute;
+    left: -45px;
+    top: -5px;
+    background: url(../img/Sprite.png) no-repeat -17px -120px;
+}
+
+.left-header>.nav-menu {
+    float: right;
+    font-size: 0;
+    margin-top: 68px;
+    margin-bottom: 57px;
+}
+
+.nav-menu>li {
+    display: inline-block;
+    margin-right: 40px;
+}
+
+.nav-menu>li:last-child {
+    margin-right: 52px;
+}
+
+.nav-menu>li>a {
+    line-height: 24px;
+    font-size: 16px;
+    color: #202242;
+    text-transform: uppercase;
+}
+
+.nav-menu>li>.active {
+    color: #ffe13e;
+}
+
+.right-header {
+    float: right;
+    width: 284px;
+    padding-left: 47px;
+}
+
+.right-header>p {
+    font-weight: 600;
+    font-size: 12px;
+    margin: 0;
+    margin-top: 41px;
+    margin-bottom: 22px;
+}
+.call-back {
+    margin-bottom: 30px;
+}
+
+.call-back>a {
+    font-weight: 600;
+    font-size: 14px;
+    color: #202242;
+    background-color: #ffe13e;
+    padding: 13px 31px;
+    display: inline-block;
+    margin-right: 22px;
+}
+
+.call-back>span {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+    display: inline-block;
+    font-family: "Lato", Arial, "Helvetica Neue", Helvetica, sans-serif;
+    padding-left: 20px;
+    border-left: 1px solid  #babbc4;
+    font-size: 22px;
+    line-height: 34px;
+}
+
+/*
+===============================
+    4. Hosting check ----- qwe4
+===============================
+*/
+
+.hosting-check {
+    background: url(../img/main-bg-img.jpg) no-repeat 50% 100%;
+    margin: 0 auto;
+}
+
+.hosting-wrap {
+    padding-top: 225px;
+
+    text-align: center;
+}
+
+.hosting-wrap>p {
+    margin-top: 44px;
+    font-size: 30px;
+    color: #fff;
+    margin-bottom: 210px;
+    position: relative;
+}
+
+.hosting-wrap>p:after {
+    content: '';
+    display: block;
+    width: 101px;
+    height: 110px;
+    position: absolute;
+    background-image: url(../img/bg-img.png);
+    background-repeat: no-repeat;
+    background-position: -10 -10;
+    top: 80px;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.check-form {
+    display: inline-block;
+    width: 536px;
+    border: 18px solid rgba(255,255,255,0.5);
+    margin-bottom: 160px;
+}
+
+.check-form:after {
+    content: '';
+    clear: both;
+    display: table;
+}
+
+input[type="text"] {
+    width: 251px;
+    float: left;
+    border:none;
+    height: 54px;
+    outline: none;
+    padding-left: 22px;
+    font-size: 18px;
+    color: #3b3b3b;
+}
+
+::-webkit-input-placeholder {
+    color:#3b3b3b;
+}
+
+::-moz-placeholder          {
+    color:#3b3b3b;
+}
+
+:-ms-input-placeholder      {
+    color:#3b3b3b;
+}
+
+input[type="submit"] {
+    width: 154px;
+    float: right;
+    border: none;
+    height: 56px;
+    border-left: 1px solid #fff;
+    background-color: #ffe13e;
+    outline: none;
+    padding-right: 18px;
+    padding-left: 18px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #fff;
+}
+input[type="submit"]:hover,
+.btn-price:hover {
+    background-color: #F8D929;
+}
+
+input[type="submit"]:active,
+.btn-price:active {
+    background-color: #DABA07;
+}
+
+/*
+============================
+    Services ---------- qwe5
+============================
+*/
+.services:after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.left-wrap {
+    background-color: #202242;
+    float: left;
+    width: 50%;
+}
+
+.right-wrap {
+    background-color: #ffe13e;
+    float: right;
+    width: 50%;
+}
+
+.host-block {
+    float: right;
+    margin-right: 86px;
+    padding-top: 340px;
+}
+
+.domain-block {
+    float: left;
+    margin-left: 86px;
+}
+
+.domain-block,
+.host-block {
+    width: 430px;
+    color: #fff;
+    text-align: center;
+}
+
+.domain-block>p,
+.host-block>p {
+    font-size: 14px;
+    margin: 0;
+    margin-top: 27px;
+    margin-bottom: 37px;
+}
+
+.btn-more {
+    border: 3px solid #fff;
+    display: block;
+    width: 150px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    margin: 0 auto;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 104px;
+}
+
+.host-block .btn-more:hover {
+    border-color: #ffe13e;
+    color: #ffe13e;
+}
+
+.domain-block .btn-more:hover {
+    border-color: #202242;
+    color: #202242;
+}
+
+.domain-block>span {
+    display: inline-block;
+    margin-top: 97px;
+    margin-bottom: 86px;
+    font-size: 134px;
+    color: #202242;
+    font-weight: bold;
+}
+
+.host-block {
+    background-image: url(../img/host-img.png);
+    background-repeat: no-repeat;
+    background-position: 130px 100px;
+}
+
+/*
+============================
+    Features ---------- qwe5
+============================
+*/
+
+.features {
+    background-color: #fbf8f1;
+}
+
+.features-wrap {
+    display: block;
+    padding-top: 96px;
+    vertical-align: top;
+    background: url(../img/bg-img-tech.png) no-repeat 50% 100%;
+}
+
+.features-wrap>h2 {
+    text-align: center;
+}
+
+.features-wrap>p {
+    text-align: center;
+    font-size: 24px;
+    margin: 0;
+    margin-top: 30px;
+}
+
+.features-blocks {
+    font-size: 0;
+}
+
+.features-blocks h4 {
+    margin: 0;
+}
+
+.features-blocks>li {
+    display: inline-block;
+    width: 270px;
+    vertical-align: top;
+    font-size: 16px;
+    text-align: center;
+    margin-right: 30px;
+    padding-top: 196px;
+    margin-bottom: 123px;
+    position: relative;
+}
+
+.features-blocks>li:after {
+    content: '';
+    display: block;
+    position: absolute;
+    background-color: #8d8d99;
+    width: 70px;
+    height: 3px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: 160px;
+}
+
+.features-blocks>li:last-child {
+    margin-right: 0;
+}
+
+.support {
+    background: url(../img/Sprite.png) no-repeat 17.5% -8px;
+}
+
+.tech {
+    background: url(../img/Sprite.png) no-repeat 50% -8px;
+}
+
+.database {
+    background: url(../img/Sprite.png) no-repeat 78% -8px;
+}
+
+.monitoring {
+    background: url(../img/Sprite.png) no-repeat 105% -8px;
+}
+
+/*
+============================
+    Clients ----------- qwe6
+============================
+*/
+
+.top-clients-section {
+    padding-top: 88px;
+}
+
+.top-clients-section:after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.clients-info {
+    width: 325px;
+    float: left;
+}
+
+.clients-info>h2 {
+    font-size: 36px;
+    line-height: 36px;
+}
+
+.clients-info>p {
+    margin: 0;
+    margin-top: 28px;
+    color: #adadad;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.clients-list {
+    float: right;
+    font-size: 0;
+    margin-top: 30px;
+}
+
+.clients-list>a {
+    display: inline-block;
+    font-size: 16px;
+    margin-right: 30px;
+    vertical-align: top;
+}
+
+.clients-list>a:last-child {
+    margin-right: 0;
+}
+
+.clients-list>a:hover {
+    box-shadow: 0 0 5px 0 #000;
+}
+
+.bottom-clients-section {
+    margin-top: 80px;
+    font-size: 0;
+    margin-bottom: 110px;
+}
+
+.clients-comment {
+    display: inline-block;
+    width: 319px;
+    padding-left: 20px;
+    padding-right: 30px;
+    padding-top: 30px;
+    padding-bottom: 28px;
+    vertical-align: top;
+    background-color: #fbf8f1;
+    margin-right: 30px;
+    position: relative;
+}
+
+.user-photo {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+    border-radius: 50%;
+    right: 20px;
+    bottom: -50px;
+}
+
+.clients-comment:last-child {
+    margin-right: 0;
+}
+
+.clients-comment>p {
+    font-size: 14px;
+    font-weight: italic;
+    line-height: 24px;
+    font-family: "Rockwell", "Times New Roman", Times, serif;
+    color: #a4a4a4;
+}
+
+.clients-comment>span {
+    color: #696969;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 24px;
+}
+
+
+/*
+============================
+    Price section ----- qwe7
+============================
+*/
+
+.price-section {
+    background-color: #202242;
+}
+
+.price-section:after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.text-wrap {
+    float: left;
+    width: 635px;
+    margin-left: 95px;
+}
+
+.text-wrap>h3 {
+    color: #fff;
+}
+
+.text-wrap>p {
+    color: #595a70;
+    margin: 0;
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+.btn-price {
+    float: right;
+    width: 225px;
+    height: 80px;
+    background-color: #ffe13e;
+    border: 4px solid #fff;
+    color: #202242;
+    line-height: 80px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 18px;
+    margin-right: 95px;
+}
+
+.text-wrap,
+.btn-price {
+    margin-top: 90px;
+    margin-bottom: 92px;
+}
+
+/*
+============================
+    Footer ------------ qwe8
+============================
+*/
+
+.main-footer {
+    background-color: #363855;
+}
+
+.main-footer>.container {
+    background: url(../img/map-img.png) no-repeat 0 31%;
+}
+
+.nav-wrap:after {
+    content: '\e803';
+    position: absolute;
+    font-family: 'symbols-maguwohost';
+    font-size: 38px;
+    color: #ffe13e;
+    top: 345px;
+    left: -435px;
+}
+
+.nav-wrap:before {
+    content: 'Yogyakarta, Indonesia 55282';
+    display: block;
+    position: absolute;
+    width: 192px;
+    top: 345px;
+    left: -390px;
+    text-align: left;
+    color: #fff;
+    font-weight: bold;
+}
+
+.nav-wrap {
+    text-align: right;
+    float: right;
+    margin-right: 3px;
+    position: relative;
+}
+
+.nav-wrap>p {
+    margin: 0;
+    margin-top: 145px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 35px;
+}
+
+.footer-nav-menu {
+    width: 65px;
+    padding-left: 45px;
+}
+
+.footer-nav-menu>li {
+    border-bottom: 1px solid #565870;
+    text-align: right;
+    padding: 12px 0;
+}
+
+.footer-nav-menu>li:last-child {
+    border-bottom: none;
+    margin-bottom: 44px;
+}
+
+.footer-nav-menu>li>a {
+    color: #fff;
+    font-size: 16px;
+}
+
+.social-btn {
+    font-size: 0;
+    width: 110px;
+    margin-bottom: 68px;
+}
+
+.social-btn>li {
+    display: inline-block;
+    margin-left: 17px;
+}
+
+.social-btn>li:first-child {
+    margin: 0;
+}
+
+.social-btn>li>a {
+    color: #ffe13e;
+    font-size: 18px;
+}
+
+.footer-nav-menu>li>a:hover,
+.get-top:hover {
+    color: #ffe13e;
+}
+
+.social-btn>li>a:hover {
+    color: #fff;
+}
+
+.get-top {
+    color: #fff;
+    font-size: 12px;
+}
+
+.nav-wrap+p {
+    clear: both;
+    text-align: center;
+    margin: 0;
+    padding-top:72px;
+    padding-bottom: 76px;
+    font-size: 14px;
+    color: #fff;
+    position: relative;
+}
+
+.nav-wrap+p:before {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 60px;
+    height: 60px;
+    left: 0;
+    right: 0;
+    top: 0px;
+    margin: auto;
+    background: url(../img/Sprite.png) no-repeat -8px -8px;
+    background-size: 3000%;
+}
+
+/*==========================
+    Selectric --------- qwe9
+============================
+*/
+
+.selectric-wrapper {
+  position: relative;
+  cursor: pointer;
+}
+
+.selectric-responsive {
+  width: 100%;
+}
+
+.selectric {
+  border: 1px solid #DDD;
+  background: #ffe13e;
+  position: relative;
+  width: 109px;
+  height: 56px;
+  float: left;
+  border: none;
+}
+.selectric .label {
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin: 0 38px 0 10px;
+  font-size: 12px;
+  line-height: 54px;
+  color: #444;
+  height: 54px;
+  font-size: 18px;
+  font-weight: bold;
+}
+.selectric .button {
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 40px;
+  height: 54px;
+  color: #BBB;
+  text-align: center;
+  font: 0/0 a;
+  *font: 20px/38px Lucida Sans Unicode, Arial Unicode MS, Arial;
+}
+.selectric .button:after {
+  content: " ";
+  position: absolute;
+  top: -5px;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  width: 10px;
+  height: 10px;
+  border-right: 2px solid #fff;
+  border-bottom: 2px solid #fff;
+  transform: rotate(45deg);
+}
+
+.selectric-hover .selectric {
+  border-color: #C4C4C4;
+}
+.selectric-hover .selectric .button {
+  color: #A2A2A2;
+}
+.selectric-hover .selectric .button:after {
+  border-top-color: #A2A2A2;
+}
+
+.selectric-open {
+  z-index: 9999;
+}
+.selectric-open .selectric {
+  border-color: #C4C4C4;
+}
+.selectric-open .selectric-items {
+  display: block;
+}
+
+.selectric-disabled {
+  filter: alpha(opacity=50);
+  opacity: 0.5;
+  cursor: default;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.selectric-hide-select {
+  position: relative;
+  overflow: hidden;
+  width: 0;
+  height: 0;
+}
+.selectric-hide-select select {
+  position: absolute;
+  left: -100%;
+  display: none;
+}
+
+.selectric-input {
+  position: absolute !important;
+  top: 0 !important;
+  left: 0 !important;
+  overflow: hidden !important;
+  clip: rect(0, 0, 0, 0) !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  width: 1px !important;
+  height: 1px !important;
+  outline: none !important;
+  border: none !important;
+  *font: 0/0 a !important;
+  background: none !important;
+}
+
+.selectric-temp-show {
+  position: absolute !important;
+  visibility: hidden !important;
+  display: block !important;
+}
+
+/* Items box */
+.selectric-items {
+  display: none;
+  position: absolute;
+  top: 55px;
+  left: 274px;
+  background: #F8F8F8;
+  border: 1px solid #C4C4C4;
+  z-index: -1;
+  box-shadow: 0 0 10px -6px;
+  font-size: 18px;
+  font-weight: bold;
+}
+.selectric-items .selectric-scroll {
+  height: 100%;
+  overflow: auto;
+}
+.selectric-above .selectric-items {
+  top: auto;
+  bottom: 100%;
+}
+.selectric-items ul, .selectric-items li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 12px;
+  line-height: 20px;
+  min-height: 20px;
+}
+.selectric-items li {
+  display: block;
+  padding: 8px;
+  border-top: 1px solid #FFF;
+  border-bottom: 1px solid #EEE;
+  color: #666;
+  cursor: pointer;
+}
+.selectric-items li.selected {
+  background: #EFEFEF;
+  color: #444;
+}
+.selectric-items li:hover {
+  background: #F0F0F0;
+  color: #444;
+}
+.selectric-items .disabled {
+  filter: alpha(opacity=50);
+  opacity: 0.5;
+  cursor: default !important;
+  background: none !important;
+  color: #666 !important;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+.selectric-items .selectric-group .selectric-group-label {
+  font-weight: bold;
+  padding-left: 10px;
+  cursor: default;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  background: none;
+  color: #444;
+}
+.selectric-items .selectric-group.disabled li {
+  filter: alpha(opacity=100);
+  opacity: 1;
+}
+.selectric-items .selectric-group li {
+  padding-left: 25px;
+}
+
+
+
+
+
+
+
