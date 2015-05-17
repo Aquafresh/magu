@@ -341,12 +341,14 @@ input[type="submit"] {
     color: #fff;
 }
 input[type="submit"]:hover,
-.btn-price:hover {
+.btn-price:hover,
+.call-back>a:hover {
     background-color: #F8D929;
 }
 
 input[type="submit"]:active,
-.btn-price:active {
+.btn-price:active,
+.call-back>a:active {
     background-color: #DABA07;
 }
 
