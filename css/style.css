@@ -167,6 +167,7 @@ a {
     font-family: "Rockwell", "Times New Roman", Times, serif;
     position: relative;
     line-height: 24px;
+    font-weight: normal;
 }
 
 .left-header>a>span {

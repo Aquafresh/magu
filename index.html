@@ -11,13 +11,13 @@
 	<title>Тестовая страница</title>
 </head>
 <body>
-	<header class="main-header">
+	<header class="main-header" id="back-top">
 		<div class="container">
 			<div class="left-header">
-				<a href="#">Maguwo<span>Host</span></a>
+				<a href="index.html">Maguwo<span>Host</span></a>
 				<ul class="nav-menu">
 					<li>
-						<a class="active" href="#">Home</a>
+						<a class="active" href="index.html">Home</a>
 					</li>
 					<li>
 						<a href="#">About</a>
@@ -113,16 +113,16 @@
 				</div>
 				<div class="clients-list">
 					<a href="#">
-						<img src="img/company-img1.jpg" alt="Not found">
+						<img src="img/company-img1.jpg" width="172" hight="115" alt="Not found">
 					</a>
 					<a href="#">
-						<img src="img/company-img2.jpg" alt="Not found">
+						<img src="img/company-img2.jpg" width="172" hight="115" alt="Not found">
 					</a>
 					<a href="#">
-						<img src="img/company-img3.jpg" alt="Not found">
+						<img src="img/company-img3.jpg" width="172" hight="115" alt="Not found">
 					</a>
 					<a href="#">
-						<img src="img/company-img4.jpg" alt="Not found">
+						<img src="img/company-img4.jpg" width="172" hight="115" alt="Not found">
 					</a>
 				</div>
 			</div>
@@ -131,21 +131,21 @@
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus ab illo et nam adipisci? Sit esse nam voluptate distinctio quam obcaecati consectetur maiores!</p>
 					<span>-Anna</span>
 					<div class="user-photo">
-						<img src="img/user-img.jpg">
+						<img src="img/user-img.jpg" width="100" hight="100" alt="Not found">
 					</div>
 				</div>
 				<div class="clients-comment">
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae odio esse, odit corrupti consequatur nam? Distinctio obcaecati maiores consectetur at sunt.</p>
 					<span>-Anna</span>
 					<div class="user-photo">
-						<img src="img/user-img.jpg">
+						<img src="img/user-img.jpg" width="100" hight="100" alt="Not found">
 					</div>
 				</div>
 				<div class="clients-comment">
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae incidunt, facilis eius explicabo quaerat dolores iure. Et consecteturhic eaque consectetur quis.</p>
 					<span>-Anna</span>
 					<div class="user-photo">
-						<img src="img/user-img.jpg">
+						<img src="img/user-img.jpg" width="100" hight="100"  alt="Not found">
 					</div>
 				</div>
 			</div>
@@ -166,7 +166,7 @@
 				<p>Navigation</p>
 				<ul class="footer-nav-menu">
 					<li>
-						<a href="#">Home</a>
+						<a href="index.html">Home</a>
 					</li>
 					<li>
 						<a href="#">About</a>
@@ -192,16 +192,32 @@
 						<a class="icon-gplus" href="#"></a>
 					</li>
 				</ul>
-				<a class="get-top" href="#">Back to Top</a>
+				<a class="get-top" href="#back-top">Back to Top</a>
 			</div>
 			<p>Copyright 2014 Maguwohost by FikriStudio</p>
 		</div>
 	</footer>
 	<script src="js/jquery.js"></script>
 	<script src="js/jquery.selectric.js"></script>
+	<script src="js/jquery.viewportchecker.js"></script>
 	<script>
 		$(function(){
 		  $('select').selectric();
+		});
+
+			$(function() {
+		  $('a[href*=#]:not([href=#])').click(function() {
+		    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+		      var target = $(this.hash);
+		      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+		      if (target.length) {
+		        $('html,body').animate({
+		          scrollTop: target.offset().top
+		        }, 1000);
+		        return false;
+		      }
+		    }
+		  });
 		});
 	</script>
 </body>
