@@ -383,7 +383,7 @@
 			"file": "index.html",
 			"settings":
 			{
-				"buffer_size": 6749,
+				"buffer_size": 7242,
 				"line_ending": "Windows"
 			}
 		},
@@ -391,7 +391,7 @@
 			"file": "css/style.css",
 			"settings":
 			{
-				"buffer_size": 18048,
+				"buffer_size": 18021,
 				"line_ending": "Windows"
 			}
 		}
@@ -451,8 +451,6 @@
 	},
 	"expanded_folders":
 	[
-		"/E/Web/Magu",
-		"/E/Web/Magu/font",
 		"/E/Web/Magu/img",
 		"/E/Web/Magu/js"
 	],
@@ -618,15 +616,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 6749,
+						"buffer_size": 7242,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								6660,
-								6660
+								7214,
+								7214
 							]
 						],
 						"settings":
@@ -641,10 +639,10 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 3511.0,
+						"translation.y": 3872.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 1,
 					"type": "text"
 				},
 				{
@@ -665,15 +663,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 18048,
+						"buffer_size": 18021,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								13740,
-								13740
+								2608,
+								2608
 							]
 						],
 						"settings":
@@ -687,10 +685,10 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 13959.0,
+						"translation.y": 1269.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 0,
 					"type": "text"
 				}
 			]
@@ -780,7 +778,7 @@
 		],
 		"width": 0.0
 	},
-	"selected_group": 0,
+	"selected_group": 1,
 	"settings":
 	{
 	},
